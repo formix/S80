@@ -1,0 +1,1059 @@
+EESchema Schematic File Version 4
+LIBS:S80-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 7 9
+Title "S80 - Stackable Z80"
+Date "2018-11-01"
+Rev "2.0"
+Comp ""
+Comment1 "Copyright (c) 2018 by R&F Pynckels"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 2550 2950 0    60   ~ 0
+U2
+Text Label 2550 3050 0    60   ~ 0
+U1
+NoConn ~ 2500 2650
+NoConn ~ 2500 2750
+NoConn ~ 2500 2850
+NoConn ~ 2500 3150
+Text HLabel 1350 950  0    60   3State ~ 0
+D[0..7]
+Text HLabel 1350 1100 0    60   3State ~ 0
+C[0..13]
+Text HLabel 1350 1250 0    60   Input ~ 0
+P[0..1]
+Text HLabel 1350 800  0    60   Input ~ 0
+A[0..15]
+Text HLabel 1350 1400 0    60   3State ~ 0
+U[0..15]
+Wire Bus Line
+	1350 1250 2100 1250
+Wire Bus Line
+	1350 1100 1950 1100
+Wire Bus Line
+	1350 950  2000 950 
+Wire Bus Line
+	1350 800  2050 800 
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J?
+U 1 1 5B50FFEF
+P 1400 3350
+AR Path="/5B4A491E/5B50FFEF" Ref="J?"  Part="1" 
+AR Path="/5B4A72C1/5B50FFEF" Ref="J?"  Part="1" 
+AR Path="/5B4A725B/5B50FFEF" Ref="J?"  Part="1" 
+AR Path="/5B4AFD44/5B50FFEF" Ref="J701"  Part="1" 
+F 0 "J701" H 1450 4350 50  0000 C CNN
+F 1 "02x20" H 1450 2250 50  0000 C CNN
+F 2 "Pynckels:PinSocket_2x20_P2.54mm_Vertical" H 1400 3350 50  0001 C CNN
+F 3 "~" H 1400 3350 50  0001 C CNN
+	1    1400 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2550 1200 2550
+Wire Wire Line
+	1700 2550 2050 2550
+Wire Wire Line
+	850  2650 1200 2650
+Wire Wire Line
+	1700 2650 2050 2650
+Wire Wire Line
+	850  2750 1200 2750
+Wire Wire Line
+	1700 2750 2050 2750
+Wire Wire Line
+	850  2850 1200 2850
+Wire Wire Line
+	1700 2850 2050 2850
+Text Label 1200 2550 2    60   ~ 0
+A0
+Text Label 1750 2550 0    60   ~ 0
+A1
+Text Label 1200 2650 2    60   ~ 0
+A2
+Text Label 1750 2650 0    60   ~ 0
+A3
+Text Label 1200 2750 2    60   ~ 0
+A4
+Text Label 1750 2750 0    60   ~ 0
+A5
+Text Label 1200 2850 2    60   ~ 0
+A6
+Text Label 1750 2850 0    60   ~ 0
+A7
+Wire Wire Line
+	1700 3450 2000 3450
+Wire Wire Line
+	1700 3550 2000 3550
+Wire Wire Line
+	1700 3850 1950 3850
+Wire Wire Line
+	1700 4150 1950 4150
+Wire Wire Line
+	1700 4250 1950 4250
+Wire Wire Line
+	1700 2450 2100 2450
+Wire Wire Line
+	1200 3350 900  3350
+Wire Wire Line
+	1200 3450 900  3450
+Wire Wire Line
+	1200 3550 900  3550
+Wire Wire Line
+	1200 3650 900  3650
+Wire Wire Line
+	1200 3750 950  3750
+Wire Wire Line
+	1200 3950 950  3950
+Wire Wire Line
+	1200 4150 950  4150
+Wire Wire Line
+	1200 2450 800  2450
+Wire Wire Line
+	1700 3350 2000 3350
+Wire Wire Line
+	1700 3650 2000 3650
+Text Label 1750 3350 0    60   ~ 0
+D1
+Text Label 1750 3450 0    60   ~ 0
+D3
+Text Label 1750 3550 0    60   ~ 0
+D5
+Text Label 1750 3650 0    60   ~ 0
+D7
+Text Label 1750 3850 0    60   ~ 0
+C3
+Text Label 1750 4150 0    60   ~ 0
+C9
+Text Label 1750 4250 0    60   ~ 0
+C11
+Text Label 1750 2450 0    60   ~ 0
+P1
+Text Label 1150 3350 2    60   ~ 0
+D0
+Text Label 1150 3450 2    60   ~ 0
+D2
+Text Label 1150 3550 2    60   ~ 0
+D4
+Text Label 1150 3650 2    60   ~ 0
+D6
+Text Label 1150 3750 2    60   ~ 0
+C0
+Text Label 1150 3950 2    60   ~ 0
+C4
+Text Label 1150 4150 2    60   ~ 0
+C8
+Text Label 1150 2450 2    60   ~ 0
+P0
+Wire Bus Line
+	800  4650 2100 4650
+Wire Bus Line
+	850  4600 2050 4600
+Wire Bus Line
+	2000 4550 900  4550
+$Comp
+L power:VCC #PWR?
+U 1 1 5B510049
+P 1250 1800
+AR Path="/5B4A491E/5B510049" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B510049" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B510049" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B510049" Ref="#PWR0701"  Part="1" 
+F 0 "#PWR0701" H 1250 1650 50  0001 C CNN
+F 1 "VCC" H 1267 1973 50  0000 C CNN
+F 2 "" H 1250 1800 50  0001 C CNN
+F 3 "" H 1250 1800 50  0001 C CNN
+	1    1250 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B51004F
+P 1250 1950
+AR Path="/5B4A491E/5B51004F" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B51004F" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B51004F" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B51004F" Ref="#PWR0702"  Part="1" 
+F 0 "#PWR0702" H 1250 1700 50  0001 C CNN
+F 1 "GND" H 1255 1777 50  0000 C CNN
+F 2 "" H 1250 1950 50  0001 C CNN
+F 3 "" H 1250 1950 50  0001 C CNN
+	1    1250 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1800 1850 1250
+Text Label 1800 1950 2    60   ~ 0
+P0
+Text Label 1800 1800 2    60   ~ 0
+P1
+Wire Wire Line
+	1900 1950 1900 1250
+Wire Wire Line
+	1250 1800 1850 1800
+Wire Wire Line
+	1250 1950 1900 1950
+$Comp
+L Connector_Generic:Conn_01x08 J702
+U 1 1 5B51005B
+P 2300 2850
+AR Path="/5B4AFD44/5B51005B" Ref="J702"  Part="1" 
+AR Path="/5B4A725B/5B51005B" Ref="J?"  Part="1" 
+F 0 "J702" H 2300 2350 50  0000 C CNN
+F 1 "01x08" H 2300 3250 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2300 2850 50  0001 C CNN
+F 3 "~" H 2300 2850 50  0001 C CNN
+	1    2300 2850
+	-1   0    0    1   
+$EndComp
+Wire Bus Line
+	950  3750 950  4500
+Wire Bus Line
+	950  4500 1950 4500
+Wire Bus Line
+	1950 4500 1950 1100
+Wire Bus Line
+	900  3350 900  4550
+Wire Bus Line
+	2000 4550 2000 950 
+Wire Bus Line
+	850  2550 850  4600
+Wire Bus Line
+	2050 4600 2050 800 
+Wire Bus Line
+	2100 1250 2100 4650
+Wire Bus Line
+	800  4650 800  2450
+Connection ~ 2100 1250
+Connection ~ 2050 800 
+Connection ~ 2000 950 
+Connection ~ 1950 1100
+NoConn ~ 1200 2950
+NoConn ~ 1200 3050
+NoConn ~ 1200 3150
+NoConn ~ 1200 3250
+NoConn ~ 1700 2950
+NoConn ~ 1700 3050
+NoConn ~ 1700 3150
+NoConn ~ 1700 3250
+$Comp
+L Connector_Generic:Conn_01x08 J703
+U 1 1 5B560972
+P 2300 4050
+AR Path="/5B4AFD44/5B560972" Ref="J703"  Part="1" 
+AR Path="/5B4A725B/5B560972" Ref="J?"  Part="1" 
+AR Path="/5B4A491E/5B560972" Ref="J?"  Part="1" 
+F 0 "J703" H 2300 3550 50  0000 C CNN
+F 1 "01x08" H 2300 4450 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2300 4050 50  0001 C CNN
+F 3 "~" H 2300 4050 50  0001 C CNN
+	1    2300 4050
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2500 3650
+NoConn ~ 2500 3750
+NoConn ~ 2500 3850
+NoConn ~ 2500 3950
+NoConn ~ 2500 4050
+NoConn ~ 2500 4150
+NoConn ~ 2500 4250
+NoConn ~ 2500 4350
+Wire Bus Line
+	1350 1400 2750 1400
+NoConn ~ 2500 2450
+NoConn ~ 2500 2550
+Connection ~ 2750 1400
+$Comp
+L Pynckels:16C550 U701
+U 1 1 5B76DC4A
+P 5100 3500
+F 0 "U701" H 4700 2050 50  0000 C CNN
+F 1 "16C550" H 5400 2050 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 5050 4050 50  0001 C CIN
+F 3 "~" H 5050 4050 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pynckels:XO32 X?
+U 1 1 5B7956B2
+P 3400 3900
+AR Path="/5B4A72AE/5B7956B2" Ref="X?"  Part="1" 
+AR Path="/5B4AFD44/5B7956B2" Ref="X701"  Part="1" 
+F 0 "X701" H 3200 4150 50  0000 L CNN
+F 1 "1.8432Mhz" H 3400 3660 50  0000 C CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 3850 3550 50  0001 C CNN
+F 3 "~" H 3300 3900 50  0001 C CNN
+	1    3400 3900
+	1    0    0    -1  
+$EndComp
+Text Label 4450 2200 2    60   ~ 0
+D0
+Text Label 4450 2300 2    60   ~ 0
+D1
+Text Label 4450 2400 2    60   ~ 0
+D2
+Text Label 4450 2500 2    60   ~ 0
+D3
+Text Label 4450 2600 2    60   ~ 0
+D4
+Text Label 4450 2700 2    60   ~ 0
+D5
+Text Label 4450 2800 2    60   ~ 0
+D6
+Text Label 4450 2900 2    60   ~ 0
+D7
+Text Label 4450 3100 2    60   ~ 0
+A0
+Text Label 4450 3200 2    60   ~ 0
+A1
+Text Label 4450 3300 2    60   ~ 0
+A2
+Text Label 5750 3200 0    60   ~ 0
+U1
+Text Label 5750 3300 0    60   ~ 0
+U2
+Text Label 4450 3500 2    60   ~ 0
+C4
+Text Label 4450 3700 2    60   ~ 0
+C11
+$Comp
+L power:VCC #PWR?
+U 1 1 5B7C68CE
+P 3050 3850
+AR Path="/5B4A491E/5B7C68CE" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B7C68CE" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B7C68CE" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B7C68CE" Ref="#PWR0703"  Part="1" 
+F 0 "#PWR0703" H 3050 3700 50  0001 C CNN
+F 1 "VCC" H 3175 3925 50  0000 C CNN
+F 2 "" H 3050 3850 50  0001 C CNN
+F 3 "" H 3050 3850 50  0001 C CNN
+	1    3050 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3850 3050 3900
+Wire Wire Line
+	3050 3900 3100 3900
+NoConn ~ 4500 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5B7CB85E
+P 4300 4650
+AR Path="/5B4A491E/5B7CB85E" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B7CB85E" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B7CB85E" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B7CB85E" Ref="#PWR0704"  Part="1" 
+F 0 "#PWR0704" H 4300 4400 50  0001 C CNN
+F 1 "GND" H 4300 4500 50  0000 C CNN
+F 2 "" H 4300 4650 50  0001 C CNN
+F 3 "" H 4300 4650 50  0001 C CNN
+	1    4300 4650
+	-1   0    0    -1  
+$EndComp
+Text Label 4450 4200 2    60   ~ 0
+C9
+Text Label 4450 4500 2    60   ~ 0
+C8
+Text Notes 5900 3200 0    47   ~ 0
+Rx
+Text Notes 5900 3300 0    47   ~ 0
+Tx
+Text Notes 4000 3500 0    47   ~ 0
+~M1
+Text Notes 4000 3700 0    47   ~ 0
+~IOrq
+Text Notes 4000 4200 0    47   ~ 0
+~WR
+Text Notes 4000 4500 0    47   ~ 0
+~RD
+Wire Wire Line
+	4500 4700 4400 4700
+Wire Wire Line
+	4400 5300 4800 5300
+Wire Wire Line
+	5350 5300 5550 5300
+Wire Wire Line
+	5550 5300 5550 5500
+Text Notes 4500 5300 0    47   ~ 0
+INT
+Text Notes 4500 5500 0    47   ~ 0
+~INT
+Text Label 4150 5500 2    60   ~ 0
+C3
+Wire Wire Line
+	4500 4800 4450 4800
+Wire Wire Line
+	5600 5100 5600 5700
+Wire Wire Line
+	5600 5700 5350 5700
+Text Label 4150 5700 2    60   ~ 0
+C0
+Text Notes 4700 5700 2    47   ~ 0
+~Reset
+Text Notes 4500 5100 0    47   ~ 0
+Reset
+Wire Wire Line
+	4450 5100 5600 5100
+Wire Wire Line
+	4500 4400 4300 4400
+Wire Wire Line
+	4500 4300 4300 4300
+Wire Wire Line
+	4300 4300 4300 4400
+Connection ~ 4300 4400
+Wire Wire Line
+	4300 4400 4300 4600
+Wire Wire Line
+	4500 4600 4300 4600
+$Comp
+L Pynckels:C C?
+U 1 1 5B81DC63
+P 4700 9950
+AR Path="/5B4A72AE/5B81DC63" Ref="C?"  Part="1" 
+AR Path="/5B4A491E/5B81DC63" Ref="C?"  Part="1" 
+AR Path="/5B4AFD44/5B81DC63" Ref="C701"  Part="1" 
+F 0 "C701" H 4590 10040 50  0000 C CNN
+F 1 "100pf" H 4580 9870 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4738 9800 50  0001 C CNN
+F 3 "~" H 4700 9950 50  0001 C CNN
+	1    4700 9950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5B81DC6A
+P 4700 9700
+AR Path="/5B4A491E/5B81DC6A" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B81DC6A" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B81DC6A" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B81DC6A" Ref="#PWR0705"  Part="1" 
+F 0 "#PWR0705" H 4700 9550 50  0001 C CNN
+F 1 "VCC" H 4717 9873 50  0000 C CNN
+F 2 "" H 4700 9700 50  0001 C CNN
+F 3 "" H 4700 9700 50  0001 C CNN
+	1    4700 9700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B81DC70
+P 4700 10200
+AR Path="/5B4A491E/5B81DC70" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B81DC70" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B81DC70" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B81DC70" Ref="#PWR0706"  Part="1" 
+F 0 "#PWR0706" H 4700 9950 50  0001 C CNN
+F 1 "GND" H 4705 10027 50  0000 C CNN
+F 2 "" H 4700 10200 50  0001 C CNN
+F 3 "" H 4700 10200 50  0001 C CNN
+	1    4700 10200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Pynckels:C C?
+U 1 1 5B81DC76
+P 5050 9950
+AR Path="/5B4A72AE/5B81DC76" Ref="C?"  Part="1" 
+AR Path="/5B4A491E/5B81DC76" Ref="C?"  Part="1" 
+AR Path="/5B4AFD44/5B81DC76" Ref="C702"  Part="1" 
+F 0 "C702" H 4940 10040 50  0000 C CNN
+F 1 "100pf" H 4930 9870 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5088 9800 50  0001 C CNN
+F 3 "~" H 5050 9950 50  0001 C CNN
+	1    5050 9950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 9700 4700 9750
+Wire Wire Line
+	4700 10100 4700 10150
+Wire Wire Line
+	4700 9750 5050 9750
+Connection ~ 4700 9750
+Wire Wire Line
+	4700 9750 4700 9800
+Wire Wire Line
+	5050 9800 5050 9750
+Wire Wire Line
+	4700 10150 5050 10150
+Connection ~ 4700 10150
+Wire Wire Line
+	4700 10150 4700 10200
+Wire Wire Line
+	5050 10100 5050 10150
+Wire Notes Line
+	4350 9300 4350 10450
+Wire Notes Line
+	4350 10450 6250 10450
+Wire Notes Line
+	6250 10450 6250 9300
+Wire Notes Line
+	6250 9300 4350 9300
+Text Notes 4400 9400 0    60   Italic 0
+IC decoupling capacitors
+Text Notes 6450 9150 0    60   Italic 0
+IC noise reduction
+Wire Notes Line
+	6400 10450 6400 9050
+Wire Notes Line
+	6400 9050 7550 9050
+Wire Notes Line
+	7550 9050 7550 10450
+Wire Notes Line
+	7550 10450 6400 10450
+$Comp
+L power:GND #PWR?
+U 1 1 5B81DCDA
+P 6600 10200
+AR Path="/5B4A491E/5B81DCDA" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B81DCDA" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B81DCDA" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B81DCDA" Ref="#PWR0709"  Part="1" 
+F 0 "#PWR0709" H 6600 9950 50  0001 C CNN
+F 1 "GND" H 6600 10050 50  0000 C CNN
+F 2 "" H 6600 10200 50  0001 C CNN
+F 3 "" H 6600 10200 50  0001 C CNN
+	1    6600 10200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 10200 6600 10100
+Wire Wire Line
+	6600 9400 6750 9400
+Wire Wire Line
+	6750 9750 6600 9750
+Connection ~ 6600 9750
+Wire Wire Line
+	6600 9750 6600 9400
+Wire Wire Line
+	6750 10100 6600 10100
+Connection ~ 6600 10100
+Wire Wire Line
+	6600 10100 6600 9750
+NoConn ~ 7300 9400
+NoConn ~ 7300 9750
+NoConn ~ 7300 10100
+NoConn ~ 5700 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5B854AA3
+P 5850 2650
+AR Path="/5B4A491E/5B854AA3" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B854AA3" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B854AA3" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B854AA3" Ref="#PWR0707"  Part="1" 
+F 0 "#PWR0707" H 5850 2400 50  0001 C CNN
+F 1 "GND" H 5855 2477 50  0000 C CNN
+F 2 "" H 5850 2650 50  0001 C CNN
+F 3 "" H 5850 2650 50  0001 C CNN
+	1    5850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2600 5850 2600
+NoConn ~ 5700 2800
+NoConn ~ 5700 2900
+NoConn ~ 5700 3000
+NoConn ~ 5700 3500
+NoConn ~ 5700 3600
+Wire Wire Line
+	5700 3850 5750 3850
+Wire Wire Line
+	5750 3850 5750 3950
+Wire Wire Line
+	5750 3950 5700 3950
+NoConn ~ 5700 4150
+NoConn ~ 5700 4250
+NoConn ~ 5700 4450
+NoConn ~ 5700 4550
+Wire Wire Line
+	5850 2600 5850 2650
+Wire Wire Line
+	4300 4600 4300 4650
+Connection ~ 4300 4600
+Wire Wire Line
+	4500 3700 3950 3700
+Wire Wire Line
+	4500 3500 3950 3500
+Wire Wire Line
+	4500 3300 4000 3300
+Wire Wire Line
+	4500 3200 4000 3200
+Wire Wire Line
+	4500 3100 4000 3100
+Wire Wire Line
+	4500 2900 4050 2900
+Wire Wire Line
+	4500 2800 4050 2800
+Wire Wire Line
+	4500 2700 4050 2700
+Wire Wire Line
+	4500 2600 4050 2600
+Wire Wire Line
+	4500 2500 4050 2500
+Wire Wire Line
+	4500 2400 4050 2400
+Wire Wire Line
+	4500 2300 4050 2300
+Wire Wire Line
+	4500 2200 4050 2200
+Wire Wire Line
+	4500 4200 3950 4200
+Wire Wire Line
+	4500 4500 3950 4500
+Wire Wire Line
+	5550 5500 3950 5500
+Wire Wire Line
+	4800 5700 3950 5700
+Wire Wire Line
+	5700 3300 6050 3300
+Wire Wire Line
+	5700 3200 6050 3200
+$Comp
+L Pynckels:74LS684 U703
+U 1 1 5B8F6A3B
+P 5100 6800
+F 0 "U703" H 5450 5950 50  0000 C CNN
+F 1 "74LS682" H 4850 5950 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5100 6700 50  0001 C CNN
+F 3 "~" H 5100 6700 50  0001 C CNN
+	1    5100 6800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6350 6100 6350
+Wire Wire Line
+	5650 6450 6100 6450
+Wire Wire Line
+	5650 6550 6100 6550
+Wire Wire Line
+	5650 6650 6100 6650
+Wire Wire Line
+	5650 6750 6100 6750
+Text Label 5700 6350 0    39   ~ 0
+A3
+Text Label 5700 6450 0    39   ~ 0
+A4
+Text Label 5700 6550 0    39   ~ 0
+A5
+Text Label 5700 6650 0    39   ~ 0
+A6
+Text Label 5700 6750 0    39   ~ 0
+A7
+Wire Wire Line
+	5650 6050 6550 6050
+Wire Wire Line
+	5650 6150 6550 6150
+Wire Wire Line
+	5650 6250 6550 6250
+Wire Wire Line
+	5650 6850 6550 6850
+Wire Wire Line
+	5650 6950 6550 6950
+Wire Wire Line
+	5650 7050 6550 7050
+Wire Wire Line
+	4450 4800 4450 5100
+Wire Wire Line
+	4400 4700 4400 5300
+Wire Wire Line
+	5400 8000 5600 8000
+Wire Wire Line
+	5600 8000 5600 7800
+Wire Wire Line
+	5600 7800 4450 7800
+Wire Wire Line
+	4450 7800 4450 6900
+Wire Wire Line
+	4450 6900 4550 6900
+NoConn ~ 4550 6700
+Wire Wire Line
+	4500 3600 3900 3600
+Wire Wire Line
+	3900 3600 3900 8000
+Wire Wire Line
+	3900 8000 4850 8000
+Text Notes 5400 8000 0    47   ~ 0
+~P=Q~
+Text Notes 3950 8000 0    47   ~ 0
+P=Q
+Wire Wire Line
+	4500 3900 3700 3900
+Text Notes 6150 6000 0    47   ~ 0
+P = [A7, A6, A5, A4, A3, x, x, x]\nQ = [JP1, JP2, JP3, JP4, JP5, x, x, x]\nAdvised IO address = 0xC0...0xC7
+Wire Bus Line
+	2750 1400 2750 3050
+Text Notes 4000 3600 0    47   ~ 0
+IO: P=Q
+NoConn ~ 1700 3750
+NoConn ~ 1700 3950
+NoConn ~ 1700 4050
+NoConn ~ 1700 4350
+NoConn ~ 1200 4350
+NoConn ~ 1200 4250
+NoConn ~ 1200 4050
+NoConn ~ 1200 3850
+$Comp
+L Pynckels:C C?
+U 1 1 5BA0EA29
+P 5400 9950
+AR Path="/5B4A72AE/5BA0EA29" Ref="C?"  Part="1" 
+AR Path="/5B4A491E/5BA0EA29" Ref="C?"  Part="1" 
+AR Path="/5B4AFD44/5BA0EA29" Ref="C703"  Part="1" 
+F 0 "C703" H 5290 10040 50  0000 C CNN
+F 1 "100pf" H 5280 9870 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5438 9800 50  0001 C CNN
+F 3 "~" H 5400 9950 50  0001 C CNN
+	1    5400 9950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 9750 5400 9750
+Wire Wire Line
+	5400 9800 5400 9750
+Wire Wire Line
+	5050 10150 5400 10150
+Wire Wire Line
+	5400 10100 5400 10150
+Connection ~ 5050 9750
+Connection ~ 5050 10150
+$Comp
+L Pynckels:C C?
+U 1 1 5BA218DD
+P 5750 9950
+AR Path="/5B4A72AE/5BA218DD" Ref="C?"  Part="1" 
+AR Path="/5B4A491E/5BA218DD" Ref="C?"  Part="1" 
+AR Path="/5B4AFD44/5BA218DD" Ref="C704"  Part="1" 
+F 0 "C704" H 5640 10040 50  0000 C CNN
+F 1 "100pf" H 5630 9870 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5788 9800 50  0001 C CNN
+F 3 "~" H 5750 9950 50  0001 C CNN
+	1    5750 9950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 9750 5750 9750
+Wire Wire Line
+	5750 9800 5750 9750
+Wire Wire Line
+	5400 10150 5750 10150
+Wire Wire Line
+	5750 10100 5750 10150
+Wire Wire Line
+	2500 2950 2750 2950
+Wire Wire Line
+	2500 3050 2750 3050
+Connection ~ 5400 9750
+Connection ~ 5400 10150
+Wire Wire Line
+	6600 7150 6400 7150
+Wire Wire Line
+	6600 7250 6250 7250
+Wire Wire Line
+	6600 7350 6100 7350
+Wire Wire Line
+	6600 7450 5950 7450
+Wire Wire Line
+	6600 7550 5800 7550
+$Comp
+L power:VCC #PWR?
+U 1 1 5B8712E4
+P 7200 7000
+AR Path="/5B4A491E/5B8712E4" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B8712E4" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B8712E4" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B8712E4" Ref="#PWR0710"  Part="1" 
+F 0 "#PWR0710" H 7200 6850 50  0001 C CNN
+F 1 "VCC" H 7217 7173 50  0000 C CNN
+F 2 "" H 7200 7000 50  0001 C CNN
+F 3 "" H 7200 7000 50  0001 C CNN
+	1    7200 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pynckels:R R701
+U 1 1 5B8712EA
+P 5800 7900
+F 0 "R701" V 5850 8000 50  0000 L CNN
+F 1 "5K 5%" V 5800 7900 35  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5730 7900 50  0001 C CNN
+F 3 "~" H 5800 7900 50  0001 C CNN
+	1    5800 7900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Pynckels:R R702
+U 1 1 5B8712F1
+P 5950 7900
+F 0 "R702" V 6000 8000 50  0000 L CNN
+F 1 "5K 5%" V 5950 7900 35  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 7900 50  0001 C CNN
+F 3 "~" H 5950 7900 50  0001 C CNN
+	1    5950 7900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Pynckels:R R703
+U 1 1 5B8712F8
+P 6100 7900
+F 0 "R703" V 6150 8000 50  0000 L CNN
+F 1 "5K 5%" V 6100 7900 35  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 7900 50  0001 C CNN
+F 3 "~" H 6100 7900 50  0001 C CNN
+	1    6100 7900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Pynckels:R R704
+U 1 1 5B8712FF
+P 6250 7900
+F 0 "R704" V 6300 8000 50  0000 L CNN
+F 1 "5K 5%" V 6250 7900 35  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6180 7900 50  0001 C CNN
+F 3 "~" H 6250 7900 50  0001 C CNN
+	1    6250 7900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Pynckels:R R705
+U 1 1 5B871306
+P 6400 7900
+F 0 "R705" V 6450 8000 50  0000 L CNN
+F 1 "5K 5%" V 6400 7900 35  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6330 7900 50  0001 C CNN
+F 3 "~" H 6400 7900 50  0001 C CNN
+	1    6400 7900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 7550 7100 7550
+Wire Wire Line
+	7100 7450 7200 7450
+Connection ~ 7200 7450
+Wire Wire Line
+	7200 7450 7200 7550
+Wire Wire Line
+	7100 7350 7200 7350
+Connection ~ 7200 7350
+Wire Wire Line
+	7200 7350 7200 7450
+Wire Wire Line
+	7100 7250 7200 7250
+Connection ~ 7200 7250
+Wire Wire Line
+	7200 7250 7200 7350
+Wire Wire Line
+	7100 7150 7200 7150
+Connection ~ 7200 7150
+Wire Wire Line
+	7200 7150 7200 7250
+Wire Wire Line
+	6400 7750 6400 7150
+Wire Wire Line
+	6250 7750 6250 7250
+Wire Wire Line
+	6100 7750 6100 7350
+Wire Wire Line
+	5950 7750 5950 7450
+Wire Wire Line
+	5800 7750 5800 7550
+$Comp
+L power:GND #PWR?
+U 1 1 5B871351
+P 6100 8250
+AR Path="/5B4A491E/5B871351" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A72C1/5B871351" Ref="#PWR?"  Part="1" 
+AR Path="/5B4A725B/5B871351" Ref="#PWR?"  Part="1" 
+AR Path="/5B4AFD44/5B871351" Ref="#PWR0708"  Part="1" 
+F 0 "#PWR0708" H 6100 8000 50  0001 C CNN
+F 1 "GND" H 6105 8077 50  0000 C CNN
+F 2 "" H 6100 8250 50  0001 C CNN
+F 3 "" H 6100 8250 50  0001 C CNN
+	1    6100 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 8050 6400 8150
+Wire Wire Line
+	6250 8050 6250 8150
+Wire Wire Line
+	6100 8050 6100 8150
+Wire Wire Line
+	5950 8050 5950 8150
+Wire Wire Line
+	5800 8050 5800 8150
+Wire Wire Line
+	6400 8150 6250 8150
+Connection ~ 6250 8150
+Wire Wire Line
+	6250 8150 6100 8150
+Connection ~ 6100 8150
+Wire Wire Line
+	6100 8150 5950 8150
+Connection ~ 5950 8150
+Wire Wire Line
+	5950 8150 5800 8150
+Connection ~ 5800 7550
+Connection ~ 5950 7450
+Connection ~ 6100 7350
+Connection ~ 6250 7250
+Connection ~ 6400 7150
+Wire Wire Line
+	5650 7150 6400 7150
+Wire Wire Line
+	5650 7250 6250 7250
+Wire Wire Line
+	5650 7350 6100 7350
+Wire Wire Line
+	5650 7450 5950 7450
+Wire Wire Line
+	5650 7550 5800 7550
+Wire Wire Line
+	7200 7000 7200 7150
+Wire Wire Line
+	6100 8150 6100 8250
+Wire Wire Line
+	6400 8150 6550 8150
+Connection ~ 6400 8150
+Wire Wire Line
+	6550 8150 6550 7050
+Wire Wire Line
+	6550 7050 6550 6950
+Connection ~ 6550 7050
+Wire Wire Line
+	6550 6950 6550 6850
+Connection ~ 6550 6950
+Wire Wire Line
+	6550 6850 6550 6250
+Connection ~ 6550 6850
+Wire Wire Line
+	6550 6250 6550 6150
+Connection ~ 6550 6250
+Wire Wire Line
+	6550 6050 6550 6150
+Connection ~ 6550 6150
+Wire Bus Line
+	3950 5700 3950 1100
+Wire Bus Line
+	4050 2900 4050 950 
+Wire Bus Line
+	4000 3300 4000 800 
+Wire Bus Line
+	6050 3300 6050 1400
+Wire Bus Line
+	6100 6750 6100 800 
+Wire Bus Line
+	2100 1250 7550 1250
+$Comp
+L Pynckels:74LS04 U702
+U 1 1 5B939A69
+P 5100 5300
+F 0 "U702" H 5100 5205 50  0000 L CNN
+F 1 "74LS04" H 5100 5375 39  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 5450 50  0001 C CNN
+F 3 "~" H 5350 5200 50  0001 C CNN
+	1    5100 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5B994C3B
+P 6800 7350
+AR Path="/5B4A725B/5B994C3B" Ref="J?"  Part="1" 
+AR Path="/5B4AFD44/5B994C3B" Ref="J704"  Part="1" 
+F 0 "J704" H 6850 7050 50  0000 C CNN
+F 1 "02x05" H 6850 7776 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6800 7350 50  0001 C CNN
+F 3 "~" H 6800 7350 50  0001 C CNN
+	1    6800 7350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 1400
+Wire Bus Line
+	6050 1400 7550 1400
+Connection ~ 6100 800 
+Wire Bus Line
+	6100 800  7550 800 
+Wire Bus Line
+	2750 1400 6050 1400
+Wire Bus Line
+	2000 950  4050 950 
+Wire Bus Line
+	2050 800  4000 800 
+Wire Bus Line
+	1950 1100 3950 1100
+Connection ~ 3950 1100
+Connection ~ 4000 800 
+Connection ~ 4050 950 
+Wire Bus Line
+	3950 1100 7550 1100
+Wire Bus Line
+	4050 950  7550 950 
+Wire Bus Line
+	4000 800  6100 800 
+Text Notes 4000 3900 0    47   ~ 0
+Clock
+$Comp
+L Pynckels:74LS04 U702
+U 2 1 5BD83842
+P 5100 5700
+F 0 "U702" H 5100 5605 50  0000 L CNN
+F 1 "74LS04" H 5100 5775 39  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 5850 50  0001 C CNN
+F 3 "~" H 5350 5600 50  0001 C CNN
+	2    5100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pynckels:74LS04 U702
+U 3 1 5BD8A3C2
+P 5100 8000
+F 0 "U702" H 5100 7900 50  0000 L CNN
+F 1 "74LS04" H 5100 8100 39  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 8150 50  0001 C CNN
+F 3 "~" H 5350 7900 50  0001 C CNN
+	3    5100 8000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pynckels:74LS04 U702
+U 4 1 5BD8A637
+P 7050 9400
+F 0 "U702" H 7050 9305 50  0000 L CNN
+F 1 "74LS04" H 7050 9475 39  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7200 9550 50  0001 C CNN
+F 3 "~" H 7300 9300 50  0001 C CNN
+	4    7050 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pynckels:74LS04 U702
+U 5 1 5BD8A77B
+P 7050 9750
+F 0 "U702" H 7050 9655 50  0000 L CNN
+F 1 "74LS04" H 7050 9825 39  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7200 9900 50  0001 C CNN
+F 3 "~" H 7300 9650 50  0001 C CNN
+	5    7050 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pynckels:74LS04 U702
+U 6 1 5BD8A7C3
+P 7050 10100
+F 0 "U702" H 7050 10005 50  0000 L CNN
+F 1 "74LS04" H 7050 10175 39  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7200 10250 50  0001 C CNN
+F 3 "~" H 7300 10000 50  0001 C CNN
+	6    7050 10100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
