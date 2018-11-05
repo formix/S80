@@ -112,14 +112,14 @@ THRE		equ		5						; Bit 5: Transmitter holding register empty indicator
 			; Cyan				ESC, "[36m"
 			; White				ESC, "[37m"
 			
-			; Bright Black		ESC, "[30;1m
-			; Bright Red		ESC, "[31;1m
-			; Bright Green		ESC, "[32;1m
-			; Bright Yellow		ESC, "[33;1m
-			; Bright Blue		ESC, "[34;1m
-			; Bright Magenta	ESC, "[35;1m
-			; Bright Cyan		ESC, "[36;1m
-			; Bright White		ESC, "[37;1m
+			; Bright Black		ESC, "[30;1m"
+			; Bright Red		ESC, "[31;1m"
+			; Bright Green		ESC, "[32;1m"
+			; Bright Yellow		ESC, "[33;1m"
+			; Bright Blue		ESC, "[34;1m"
+			; Bright Magenta	ESC, "[35;1m"
+			; Bright Cyan		ESC, "[36;1m"
+			; Bright White		ESC, "[37;1m"
 			
 			; Clear screen		ESC, "[2J"
 			; Cursor home		ESC, "[H"
