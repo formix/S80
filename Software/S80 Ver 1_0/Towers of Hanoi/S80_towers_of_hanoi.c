@@ -37,24 +37,36 @@
 
 #include <stdio.h>
 
+#include "S80_ansi.h"
 #include "S80_reboot.h"
 #include "S80_serial.h"
 
-void TowerOfHanoi(int n, char from_rod, char to_rod, char aux_rod)
+
+char rods[3];
+unsigned char color;
+
+
+void TowerOfHanoi(int n, unsigned char from_rod, unsigned char to_rod, unsigned char aux_rod)
 	{
 	char buffer[80];
 
     if (n == 1)
 		{
-        sprintf(buffer, "\n\r Move disk 1 from rod %c to rod %c", from_rod, to_rod);
+        sprintf(buffer, "Move disk 1 from rod %c to rod %c\n\r", rods[from_rod], rods[to_rod]);
+		SetColor(WHITE, NOTBRIGHT, color, NOTBRIGHT);
+		color = (color + 1) % 8;
 		SendString(buffer);
-        return;
+		ResetAttributes();
+		return;
 		}
 
     TowerOfHanoi(n-1, from_rod, aux_rod, to_rod);
-	
-    sprintf(buffer, "\n\r Move disk %d from rod %c to rod %c", n, from_rod, to_rod);
+
+    sprintf(buffer, "Move disk %d from rod %c to rod %c\n\r", n, rods[from_rod], rods[to_rod]);
+	SetColor(WHITE, BRIGHT, color, NOTBRIGHT);
+	color = (color + 1) % 8;
 	SendString(buffer);
+	ResetAttributes();
 	
     TowerOfHanoi(n-1, aux_rod, to_rod, from_rod);
 	}
@@ -62,9 +74,21 @@ void TowerOfHanoi(int n, char from_rod, char to_rod, char aux_rod)
 void main()
 	{
     int n = 4;									// Number of disks
+
+	rods[0] = 'A';
+	rods[1] = 'B';
+	rods[2] = 'C';
+
+	color = 0;
 	
-	InitUart();	
-    TowerOfHanoi(n, 'A', 'C', 'B');				// A, B and C are names of rods
+	InitUart();									// Initialise UART befor doing any console I/O
+
+	ClearScreen();
+	CursorHome();
+
+	TowerOfHanoi(n, 0, 2, 1);					// From rod 1 to rod 3 using rod 2
+
+	ResetAttributes();
 
 	GetChar();									// Wait for a keypress	
 	Reboot();									// Warm start of the S80
