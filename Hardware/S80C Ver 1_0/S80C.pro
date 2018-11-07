@@ -1,4 +1,4 @@
-update=5/11/2018 17:31:19
+update=7/11/2018 8:53:16
 version=1
 last_client=kicad
 [general]
@@ -33,7 +33,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=C:/Users/Pynckels/OneDrive/Projects/kicad-templates/Pynckels.kicad_wks
+PageLayoutDescrFile=$(PYNCKELS_TEMPLATE_DIR)/Pynckels.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
