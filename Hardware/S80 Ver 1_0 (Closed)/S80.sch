@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:S80-cache
 EELAYER 26 0
 EELAYER END
 $Descr User 8268 5827

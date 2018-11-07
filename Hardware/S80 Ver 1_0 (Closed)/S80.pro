@@ -1,4 +1,4 @@
-update=22/10/2018 18:06:10
+update=7/11/2018 8:15:00
 version=1
 last_client=kicad
 [cvpcb]
@@ -30,7 +30,7 @@ BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
 [schematic_editor]
 version=1
-PageLayoutDescrFile=C:/Users/Pynckels/OneDrive/Projects/kicad-templates/Pynckels.kicad_wks
+PageLayoutDescrFile=C:/Users/Pynckels/OneDrive/Projects/kicad-libraries/Pynckels-kicad-library/Pynckels.worksheets/Pynckels.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
