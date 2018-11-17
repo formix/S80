@@ -41,54 +41,74 @@
 #include "S80_reboot.h"
 #include "S80_serial.h"
 
+#define BYTE		unsigned char
 
-char rods[3];
-unsigned char color;
+#define COL_BASE	((BYTE) 20)
+#define COL_INC		((BYTE) 20)
 
+#define DISC_INC	((BYTE) 2)
+#define DISC_WIDTH	((BYTE) 3)
 
-void TowerOfHanoi(int n, unsigned char from_rod, unsigned char to_rod, unsigned char aux_rod)
+#define LINE_BASE	((BYTE) 20)
+#define LINE_INC	((BYTE) 1)
+
+#define NR_DISCS	((BYTE) 4)
+
+BYTE discs[NR_DISCS];							// Place of disc (on which rod is the disc)
+char rods[3];									// Translation table for rod names
+
+void DrawDisc(BYTE n)
 	{
-	char buffer[80];
+		// char buffer[80];
+		char c = 'A';
+		
+		BYTE col  = COL_BASE  + (discs[n] * COL_INC ) - DISC_INC;
+		BYTE line = LINE_BASE + (n        * LINE_INC);
+		// CursorXY(col, line);
+		// sprintf(buffer, "%c", c);
+		// SendString(buffer);
+		SendChar(c);
+	}
 
-    if (n == 1)
+void MoveDisc(BYTE n, BYTE from_rod, BYTE to_rod)
+	{
+	discs[n] = to_rod;
+	DrawDisc(n);
+	}
+
+
+void TowerOfHanoi(BYTE n, BYTE from_rod, BYTE to_rod, BYTE aux_rod)
+	{
+    if (n == 0)
 		{
-        sprintf(buffer, "Move disk 1 from rod %c to rod %c\n\r", rods[from_rod], rods[to_rod]);
-		SetColor(WHITE, NOTBRIGHT, color, NOTBRIGHT);
-		color = (color + 1) % 8;
-		SendString(buffer);
-		ResetAttributes();
+		MoveDisc(n, from_rod, to_rod);
 		return;
 		}
 
     TowerOfHanoi(n-1, from_rod, aux_rod, to_rod);
-
-    sprintf(buffer, "Move disk %d from rod %c to rod %c\n\r", n, rods[from_rod], rods[to_rod]);
-	SetColor(WHITE, BRIGHT, color, NOTBRIGHT);
-	color = (color + 1) % 8;
-	SendString(buffer);
-	ResetAttributes();
-	
+	MoveDisc(n, from_rod, to_rod);
     TowerOfHanoi(n-1, aux_rod, to_rod, from_rod);
 	}
 
+
 void main()
 	{
-    int n = 4;									// Number of disks
+	for (int i=0; i<NR_DISCS; i++)				// Place all discs on rod 0
+		discs[i] = 0;
 
-	rods[0] = 'A';
+	rods[0] = 'A';								// Fill rod names translation table
 	rods[1] = 'B';
 	rods[2] = 'C';
 
-	color = 0;
-	
 	InitUart();									// Initialise UART befor doing any console I/O
 
 	ClearScreen();
 	CursorHome();
 
-	TowerOfHanoi(n, 0, 2, 1);					// From rod 1 to rod 3 using rod 2
-
-	ResetAttributes();
+	SendChar('A');
+	SendChar('B');
+	SendChar('C');
+	// TowerOfHanoi(NR_DISCS-1, 0, 2, 1);			// From rod 'A' to rod 'C' using rod 'B'
 
 	GetChar();									// Wait for a keypress	
 	Reboot();									// Warm start of the S80

@@ -64,7 +64,7 @@
 		{
 		char buffer[30];
 		
-		sprintf(buffer, CURSORXY, x, y);
+		sprintf(buffer, CURSORXY, y, x);
 		SendString(buffer);
 		}
 
