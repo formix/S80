@@ -1,14 +1,13 @@
 .git/
-
 Analysis/
 Distribution/
-Hardware/S80*Ver*1_0*(Closed)/Pcb/Template
 Hardware/S80*Ver*2_0
 Hardware/S80Z*Ver*1_0
 Software/Basic/
 Software/Fp32/
 
 *.bak
+*.bck
 *.kicad_pcb-bak
 
 *.bin
