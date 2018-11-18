@@ -111,7 +111,7 @@ _SendChar:
 			bit		THRE, a					; If UART not ready to send: Iterate
 			jp		z, __SendCharWait
 
-			ld		a, (ix+5)				; Put byte to send in Tx queue
+			ld		a, (ix+4)				; Put byte to send in Tx queue
 			out     (TX), a
 
 			pop		af						; Restore all registers
@@ -143,8 +143,10 @@ _SendString:
 			jp		z, __SendStringEnd
 
 			push	af						; Then send the char to the console
+			inc		sp						; This is the way ZCC calls a fctn(char c), don't ask me why
 			call	_SendChar
-			pop		af						; Restore the stack situation
+			; pop		af					; Restore the stack situation
+			inc		sp						; Since half of the push af is already restored
 
 			inc		hl						; Point hl to next character
 			jp		__SendStringIterate		; Iterate

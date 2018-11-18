@@ -49,9 +49,9 @@ del *.rom 2>NUL 1>NUL
 del *.S80 2>NUL 1>NUL
 del *.txt 2>NUL 1>NUL
 
-rem Compile unoptimized (target +test in stead of +z80)
+rem Compile unoptimized => target +test in stead of +z80
 echo   Compile and build...
-zcc +z80 -clib=sdcc_iy -create-app --c-code-in-asm --list -m -startup=1 -Cz"--rombase=0x2000 --romsize=0x1000 --ihex" -pragma-define:CRT_ORG_CODE=0x2000 -o S80_towers_of_hanoi S80_towers_of_hanoi.c S80_ansi.c S80_reboot.asm S80_serial.asm
+zcc +z80 -clib=sdcc_iy -create-app --c-code-in-asm --list -m -startup=1 -Cz"--rombase=0x0400 --romsize=0x0D80 --ihex" -pragma-define:CRT_ORG_CODE=0x0400 -o S80_towers_of_hanoi S80_towers_of_hanoi.c S80_ansi.c S80_delay.asm S80_reboot.asm S80_serial.asm
 if %errorlevel% neq 0 exit /B %errorlevel%
 
 rem Convert to S80 format

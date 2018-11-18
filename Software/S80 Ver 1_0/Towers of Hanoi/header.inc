@@ -12,5 +12,5 @@
 	  The towers of Hanoi for S80.
 
 :
-2000
+0400
 :
