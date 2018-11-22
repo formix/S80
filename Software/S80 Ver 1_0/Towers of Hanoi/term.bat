@@ -1,1 +1,1 @@
-"C:\Program Files (x86)\BEL\Realterm\realterm.exe" display=1 scanports=0 baud=115200 data=8N1 port=5 rows=20 cols=100 sendfname="C:\Users\Pynckels\OneDrive\Projects\S80\Software\S80 Ver 1_0\Towers of Hanoi\S80_towers_of_hanoi.rom" chardly=1
+"C:\Program Files (x86)\BEL\Realterm\realterm.exe" display=1 scanports=0 baud=115200 data=8N1 port=5 rows=20 cols=100 sendfname="C:\Users\Pynckels\OneDrive\Projects\S80\Software\S80 Ver 1_0\Towers of Hanoi\S80_towers_of_hanoi.S80" chardly=1
