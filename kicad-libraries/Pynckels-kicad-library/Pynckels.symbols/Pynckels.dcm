@@ -24,6 +24,12 @@ K TTL and2 OpenCol
 F http://www.ti.com/lit/gpn/sn74LS09
 $ENDCMP
 #
+$CMP 74LS137
+D Decoder 3 to 8, address latches
+K TTL DECOD8 DECOD
+F http://www.ti.com/lit/gpn/sn74LS137
+$ENDCMP
+#
 $CMP 74LS14
 D Triple NOT Gate Schmitt, Low-Voltage CMOS
 K Triple NOT Schmitt LVC CMOS
@@ -47,11 +53,15 @@ K TTL DFF
 F 74xx/74hc_hct74.pdf
 $ENDCMP
 #
+$CMP AS6C4008
+D 512K X 8 bit low power CMOS SRAM (5V)
+$ENDCMP
+#
 $CMP AS6C8008A
 D SRAM Asynchronous Memory IC 8Mbit (1M x 8) Parallel 45ns (AS6C8008A-45BIN, 5V)
 $ENDCMP
 #
-$CMP AS7C-4096A
+$CMP AS7C4096A
 D SRAM Asynchronous Memory IC 32Mbit (4M x 8) Parallel 12ns (AS7C4096-12TCN, 5V)
 $ENDCMP
 #
@@ -101,6 +111,10 @@ $CMP Jumper
 D Jumper, generic, normally closed
 K jumper bridge link nc
 F ~
+$ENDCMP
+#
+$CMP SST39SF040
+D 4M x 8bit Multi-Purpose Flash EEPROM (5V)
 $ENDCMP
 #
 $CMP USB_micro
