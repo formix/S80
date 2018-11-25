@@ -1,3 +1,18 @@
+#===============================================================================
+#
+# Project: S80
+# File:    .gitignore
+# Version: 1.0
+#
+# Author : Filip Pynckels
+#
+# Created: 2018 10 20
+# Adapted: 2018 11 24
+#
+#===============================================================================
+
+# Directories
+
 .git/
 Analysis/
 Distribution/
@@ -5,9 +20,39 @@ Hardware/S80Z*Ver*1_0
 Software/Basic/
 Software/Fp32/
 
+# Hardware - Backup files
+
 *.bak
 *.bck
 *.kicad_pcb-bak
+
+# Hardware - Temporary files
+
+*.000
+*~
+_autosave-*
+*-cache.lib
+*-rescue.lib
+*-save.pro
+*-save.kicad_pcb
+*.sym
+*.tmp
+
+# Hardware - Netlist files (exported from Eeschema)
+
+*.net
+
+# Hardware - Autorouter files (exported from Pcbnew)
+
+*.dsn
+*.ses
+
+# Hardware - Exported BOM files
+
+*.xml
+*.csv
+
+# Software - Temporary files
 
 *.bin
 *.def
