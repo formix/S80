@@ -1051,7 +1051,7 @@ Text Notes 5500 2750 0    60   ~ 0
 SRAM\n512K
 Text Notes 3550 2750 0    60   ~ 0
 EEPROM\n512K
-Text Notes 3900 9100 0    40   ~ 0
+Text Notes 3900 9275 0    40   ~ 0
 ~IOReq
 Text Label 3900 9200 0    60   ~ 0
 C11
@@ -1436,8 +1436,8 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS137" H 7600 10250 50  0001 C CNN
 	1    7600 10250
 	1    0    0    -1  
 $EndComp
-Text Notes 7500 9750 0    40   ~ 0
-3 bit -> 8 lines\ndecoder
+Text Notes 7175 9750 0    40   ~ 0
+3 bit -> 8 lines decoder with\nbuild-in output line pull-up
 $Comp
 L power:VCC #PWR?
 U 1 1 5DBD119C
@@ -1469,12 +1469,7 @@ $EndComp
 Wire Wire Line
 	7050 10700 7050 10650
 Wire Wire Line
-	7050 10550 7150 10550
-Wire Wire Line
 	7050 10650 7150 10650
-Connection ~ 7050 10650
-Wire Wire Line
-	7050 10650 7050 10550
 Wire Wire Line
 	6500 8850 8275 8850
 Wire Wire Line
@@ -1524,7 +1519,7 @@ Text Label 8100 10650 0    40   ~ 0
 Wire Wire Line
 	8050 9950 8350 9950
 Wire Wire Line
-	8050 10050 8375 10025
+	8050 10050 8375 10050
 Wire Wire Line
 	8400 3850 8400 10150
 Wire Wire Line
@@ -2823,6 +2818,7 @@ U 1 1 5C92B5CE
 P 15400 9300
 AR Path="/5B4A491E/5C92B5CE" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5C92B5CE" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5C92B5CE" Ref="H?"  Part="1" 
 F 0 "H?" H 15300 9250 50  0000 L CNN
 F 1 "Mh_Pad" H 15400 9450 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 15400 9300 50  0001 C CNN
@@ -2836,6 +2832,7 @@ U 1 1 5C92B5D5
 P 15050 9300
 AR Path="/5B4A491E/5C92B5D5" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5C92B5D5" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5C92B5D5" Ref="H?"  Part="1" 
 F 0 "H?" H 14950 9250 50  0000 L CNN
 F 1 "Mh_Pad" H 15050 9450 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 15050 9300 50  0001 C CNN
@@ -2849,6 +2846,7 @@ U 1 1 5C92B5DC
 P 14350 9300
 AR Path="/5B4A491E/5C92B5DC" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5C92B5DC" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5C92B5DC" Ref="H?"  Part="1" 
 F 0 "H?" H 14350 9250 50  0000 L CNN
 F 1 "Mh_Pad" H 14350 9450 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 14350 9300 50  0001 C CNN
@@ -2862,6 +2860,7 @@ U 1 1 5C92B5E3
 P 14700 9300
 AR Path="/5B4A491E/5C92B5E3" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5C92B5E3" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5C92B5E3" Ref="H?"  Part="1" 
 F 0 "H?" H 14700 9250 50  0000 L CNN
 F 1 "Mh_Pad" H 14700 9450 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 14700 9300 50  0001 C CNN
@@ -2904,6 +2903,7 @@ U 1 1 5CF4BF70
 P 15400 9700
 AR Path="/5B4A491E/5CF4BF70" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5CF4BF70" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5CF4BF70" Ref="H?"  Part="1" 
 F 0 "H?" H 15300 9650 50  0000 L CNN
 F 1 "Mh_Pad" H 15400 9850 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 15400 9700 50  0001 C CNN
@@ -2917,6 +2917,7 @@ U 1 1 5CF4BF77
 P 15050 9700
 AR Path="/5B4A491E/5CF4BF77" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5CF4BF77" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5CF4BF77" Ref="H?"  Part="1" 
 F 0 "H?" H 14950 9650 50  0000 L CNN
 F 1 "Mh_Pad" H 15050 9850 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 15050 9700 50  0001 C CNN
@@ -2930,6 +2931,7 @@ U 1 1 5CF4BF7E
 P 14350 9700
 AR Path="/5B4A491E/5CF4BF7E" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5CF4BF7E" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5CF4BF7E" Ref="H?"  Part="1" 
 F 0 "H?" H 14350 9650 50  0000 L CNN
 F 1 "Mh_Pad" H 14350 9850 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 14350 9700 50  0001 C CNN
@@ -2943,6 +2945,7 @@ U 1 1 5CF4BF85
 P 14700 9700
 AR Path="/5B4A491E/5CF4BF85" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5CF4BF85" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5CF4BF85" Ref="H?"  Part="1" 
 F 0 "H?" H 14700 9650 50  0000 L CNN
 F 1 "Mh_Pad" H 14700 9850 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 14700 9700 50  0001 C CNN
@@ -2956,6 +2959,7 @@ U 1 1 5D43809B
 P 15400 10100
 AR Path="/5B4A491E/5D43809B" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5D43809B" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5D43809B" Ref="H?"  Part="1" 
 F 0 "H?" H 15300 10050 50  0000 L CNN
 F 1 "Mh_Pad" H 15400 10250 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 15400 10100 50  0001 C CNN
@@ -2969,6 +2973,7 @@ U 1 1 5D4380A2
 P 15050 10100
 AR Path="/5B4A491E/5D4380A2" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5D4380A2" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5D4380A2" Ref="H?"  Part="1" 
 F 0 "H?" H 14950 10050 50  0000 L CNN
 F 1 "Mh_Pad" H 15050 10250 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 15050 10100 50  0001 C CNN
@@ -2982,6 +2987,7 @@ U 1 1 5D4380A9
 P 14350 10100
 AR Path="/5B4A491E/5D4380A9" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5D4380A9" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5D4380A9" Ref="H?"  Part="1" 
 F 0 "H?" H 14350 10050 50  0000 L CNN
 F 1 "Mh_Pad" H 14350 10250 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 14350 10100 50  0001 C CNN
@@ -2995,6 +3001,7 @@ U 1 1 5D4380B0
 P 14700 10100
 AR Path="/5B4A491E/5D4380B0" Ref="H?"  Part="1" 
 AR Path="/5B4AFD44/5D4380B0" Ref="H?"  Part="1" 
+AR Path="/5B4A725B/5D4380B0" Ref="H?"  Part="1" 
 F 0 "H?" H 14700 10050 50  0000 L CNN
 F 1 "Mh_Pad" H 14700 10250 50  0000 C BNN
 F 2 "Pynckels:MountingHole_3.2mm_Via" H 14700 10100 50  0001 C CNN
@@ -3064,15 +3071,15 @@ Connection ~ 14350 9950
 Wire Wire Line
 	14350 9950 14700 9950
 Wire Wire Line
-	8050 10650 8525 10625
+	8050 10650 8525 10650
 Wire Wire Line
-	8525 10625 8525 3950
+	8525 10650 8525 3950
 Wire Wire Line
 	8500 3925 10900 3925
 Wire Wire Line
 	13050 3950 13050 6025
 Wire Wire Line
-	8375 3875 8375 10025
+	8375 3875 8375 10050
 Wire Wire Line
 	6975 3850 8400 3850
 Wire Wire Line
@@ -3087,4 +3094,13 @@ Wire Notes Line
 	15200 1350 10850 1350
 Text Notes 10900 6400 0    60   ~ 0
 Future extension memory banks
+Wire Wire Line
+	6825 9650 6825 10550
+Wire Wire Line
+	6825 10550 7150 10550
+Connection ~ 6825 9650
+Text Label 7150 10550 2    60   ~ 0
+C10
+Text Notes 7150 10625 2    40   ~ 0
+~MReq~
 $EndSCHEMATC
