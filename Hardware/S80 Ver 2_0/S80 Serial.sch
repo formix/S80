@@ -226,13 +226,13 @@ NoConn ~ 1700 3050
 NoConn ~ 1700 3150
 NoConn ~ 1700 3250
 $Comp
-L Connector_Generic:Conn_01x08 J404
+L Connector_Generic:Conn_01x08 J405
 U 1 1 5B560972
 P 2300 4050
-AR Path="/5B4AFD44/5B560972" Ref="J404"  Part="1" 
+AR Path="/5B4AFD44/5B560972" Ref="J405"  Part="1" 
 AR Path="/5B4A725B/5B560972" Ref="J?"  Part="1" 
 AR Path="/5B4A491E/5B560972" Ref="J?"  Part="1" 
-F 0 "J404" H 2300 3550 50  0000 C CNN
+F 0 "J405" H 2300 3550 50  0000 C CNN
 F 1 "01x08" H 2300 4450 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2300 4050 50  0001 C CNN
 F 3 "~" H 2300 4050 50  0001 C CNN
@@ -1094,12 +1094,12 @@ Wire Wire Line
 	6850 9850 6900 9850
 Connection ~ 6100 10050
 $Comp
-L Connector_Generic:Conn_01x08 J401
+L Connector_Generic:Conn_01x08 J402
 U 1 1 5B51005B
 P 2300 2850
-AR Path="/5B4AFD44/5B51005B" Ref="J401"  Part="1" 
+AR Path="/5B4AFD44/5B51005B" Ref="J402"  Part="1" 
 AR Path="/5B4A725B/5B51005B" Ref="J?"  Part="1" 
-F 0 "J401" H 2300 2350 50  0000 C CNN
+F 0 "J402" H 2300 2350 50  0000 C CNN
 F 1 "01x08" H 2300 3250 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2300 2850 50  0001 C CNN
 F 3 "~" H 2300 2850 50  0001 C CNN
@@ -1120,10 +1120,10 @@ Connection ~ 3250 1400
 Wire Bus Line
 	3250 1400 7550 1400
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J402
+L Connector_Generic:Conn_02x08_Odd_Even J401
 U 1 1 5BF732E4
 P 2800 2750
-F 0 "J402" H 2850 3150 50  0000 C CNN
+F 0 "J401" H 2850 3150 50  0000 C CNN
 F 1 "02x08" H 2850 2250 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 2800 2750 50  0001 C CNN
 F 3 "~" H 2800 2750 50  0001 C CNN
@@ -1131,10 +1131,10 @@ F 3 "~" H 2800 2750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J405
+L Connector_Generic:Conn_02x08_Odd_Even J404
 U 1 1 5BFAA964
 P 2800 3950
-F 0 "J405" H 2850 4350 50  0000 C CNN
+F 0 "J404" H 2850 4350 50  0000 C CNN
 F 1 "02x08" H 2850 3450 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 2800 3950 50  0001 C CNN
 F 3 "~" H 2800 3950 50  0001 C CNN
